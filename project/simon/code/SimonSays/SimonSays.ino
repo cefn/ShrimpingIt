@@ -1,3 +1,4 @@
+//#include <Tone.h> //to reinclude, need to fix initSong to only initialise tonePin once
 #include <rtttl.h>
 
 /** 
@@ -59,8 +60,6 @@ void setup(){
   initPins();
   tonePlayer.setSong(greetSong);
   randomSeed(seedOut(31));
-  //randSeed(longRandom());
-  //randSeed(seedOut(31));
 
   //play greeting song
   tonePlayer.setSong(greetSong);
